@@ -1,0 +1,23 @@
+body {
+  background-color: #000;
+}
+
+#root {
+  padding: 2rem;
+  
+}
+
+
+summary::after {
+  content: '[+]';
+  color: #fff;
+  opacity: 0.5;
+  margin-left: .75em;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  content: '[-]';
+  margin-left: .55em;
+  transition: 0.2s;
+}
